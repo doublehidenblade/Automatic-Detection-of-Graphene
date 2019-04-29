@@ -1,7 +1,7 @@
 # Automatic-Detection-of-Graphene
 Team 1: Dingyu Peng, Liu Hong, Thomas Phelps, Tyler Tran
 
-**I. Introduction**
+**I. Introduction** 
 Graphene synthesis is a very promising field. Graphene is the strongest material ever tested, one
 of the highest thermal conductivities, and is nearly transparent. Graphene fabrication is very
 involved, so there is high demand for finding a way to identify graphene in electron microscope
@@ -12,7 +12,7 @@ the nanoMFG node to generate training data by manually determine the areas cover
 graphene. Eventually, we will develop a machine learning algorithm to automatically scan SEM
 images to determine the locations and features of graphene.
 
-**II. Proposed Solution**
+**II. Proposed Solution** 
 Our solution is to use the provided package software to manually mask the graphene area then
 read the binary image to be processed as our test labels. We will also read the raw image to be
 processed for feature generation.
@@ -38,7 +38,7 @@ Figure 4: Training image and predicted image
 The predicted image on the right of Figure 4 shows our image 1 training result, as compared to
 the training image on the left.
 
-**III. Summary and Conclusion**
+**III. Summary and Conclusion** 
 The results of the training data produced a high degree of accuracy when it
 came to predicting graphene. The source of most of the misidentification came from areas of
 major deformities or substrates. In addition, since a grayscale is implemented, images that had
@@ -46,7 +46,7 @@ overlapping peaks from the intensity histograms produced less than average resul
 training dataset 1. Regardless, the large amount of data used for training helped to predict
 graphene correctly ~97% of the time.
 
-**IV. Future Work**
+**IV. Future Work** 
 Our 8 by 8 patch size window may cause information lost around the edge of the graphene
 because classification result only based on the majority of pixels from the patch window.
 For future work, we can try to use a multi-size sliding window to patch the raw image to
@@ -61,5 +61,5 @@ analyzing, we also found some SEM image contained significant pollution, which m
 the result of graphene identification. We can tune the training data to collect the feature for
 pollution area and predict if it is graphene or non-graphene.
 
-# V. Reference
+**V. Reference**
 Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
